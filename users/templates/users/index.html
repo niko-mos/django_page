@@ -1,0 +1,52 @@
+
+{% extends 'users/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<nav class="navbar navbar-light navbar-expand-md">
+    <div class="container-fluid"><a class="navbar-brand" href="#" style="margin-left: 42px;padding-right: 0px;padding-left: 0px;margin-right: 98px;">Космология</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="{% url 'home' %}" style="margin-right: 30px;">О студии</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'primeri' %}" style="margin-right: 30px">Примеры работ</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'order' %}" style="margin-right: 30px">Сделать заказ</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'zayavka' %}" style="margin-right: 30px;">Связаться с нами</a></li>
+
+            <!--
+                {% if request.user.is_authenticated %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'profile' %}" style="margin-left: 50px;">Профиль</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}" style="margin-left: 50px;">Выйти</a></li>
+                {% else %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'register' %}" style="margin-left: 50px;">Создать аккаунт</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'login' %}" style="margin-left: 50px;">Войти</a></li>
+                {% endif %}
+            -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main> <!-- style="background-color: rgba(192,197,172,255)">-->
+            
+    
+<div>
+
+
+    <div class="d-flex justify-content-center">
+        <p class="ps_top">Творческая студия Космология создана двумя художниками, которые хотят нести в мир красоту, упорядоченность и удобство. Мы создаём логотипы для фирм и личного бренда.</p>
+    </div>
+
+
+    <div class="d-flex justify-content-center">
+        <p class="ps">Мы считаем, что каждый может и должен иметь красивое и лаконичное лицо-логотип, который будет отражать особенности и уникальность личности или сферу вашей деятельности, выраженную в художественном, креативном и шрифтовом воплощении. Мы делаем лого даже под небольшие бюджеты. Но красота при этом не вычитается.</p>
+    </div>
+
+    <div class="d-flex justify-content-center" style="margin-bottom: 30px; padding-bottom: 30px;">
+        <p class="ps">Логотип создается на основании текстового описания деятельности компании. В случае с личным логотипом - на основании вида деятельности, хобби и интересов. </p>
+
+    </div>
+
+</div></main>
+
+{% endblock content %}
