@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn cosmologia.wsgi
+web: gunicorn init:app
