@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn authsys.wsgi.py
+web: gunicorn authsys.wsgi
